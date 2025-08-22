@@ -15,10 +15,10 @@ li {
     font-family: monospace;
 }
 .light-theme {
-    color: #000000;
-    background: #00FF00;
     --bg: var(--green);
     --fontColor: var(--black);
+    --buttonBg: var(--black);
+    --buttonFontColor: var(--white);
 }
 :root {
     --green: #00FF00;
@@ -32,4 +32,17 @@ li {
 .dark-theme {
     --bg: var(--black);
     --fontColor: var(--green);
+    --buttonBg: var(--black);
+    --buttonFontColor: var(--white);
 }
+.button {
+    color: var(--buttonnFontColor);
+    background-color: var(--buttonBg);
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+}
+.button:focus {outline-style: none;}
